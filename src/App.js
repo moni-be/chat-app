@@ -13,7 +13,7 @@ function App() {
       />
 
       <Contact
-       name="Violet Ford"
+       name="Brandon Meyer"
        avatar="https://randomuser.me/api/portraits/men/42.jpg"
        alt="Brandon Meyer"     
        offline
