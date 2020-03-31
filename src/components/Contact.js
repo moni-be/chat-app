@@ -1,24 +1,27 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function Contact(){
+function Contact(props){
     return(
         <div className="Contact">         
-            <img class="avatar"
-              src="https://randomuser.me/api/portraits/women/76.jpg"
-              alt="Nelson Muntz" />
-        <div class="status status-text">   
-          <p class="name">Violet Ford </p>
-          <p class="status-text">
-            <span class="status-online"></span>
-            online
-        {/*   <span class="status status-offline">offline</span>  */}
-          </p>
+            <img className="avatar" 
+            src={props.avatar} alt={props.alt} />
+        <div className="status status-text">   
+          <p className="name">{props.name}</p>
+          <span className={props.online ? 'status-online' : 'status-offline'}></span>
+          <p className='status-text'>{props.online ? 'online' : 'offline'}</p>     
         </div> 
 
       </div>  
     );
 
 }
+
+Contact.propTypes = {
+  name: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+  online: PropTypes.bool,
+};
 
 
 export default Contact;
