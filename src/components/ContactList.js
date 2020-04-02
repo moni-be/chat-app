@@ -35,7 +35,7 @@ const users = [
         < Contact
             name={user.name}
             avatar={user.avatar}
-            online={user.bool}          
+            online={user.online}          
         />
             )   
         )}       
