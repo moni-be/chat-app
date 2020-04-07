@@ -5,18 +5,19 @@ import './components/Contact.css';
 function App() {
   return (
     <div className="App">
+ 
       <Contact
        name="Violet Ford"
        avatar="https://randomuser.me/api/portraits/women/76.jpg"
        alt="Violet Ford"      
-       online
+       offline
       />
 
       <Contact
        name="Brandon Meyer"
        avatar="https://randomuser.me/api/portraits/men/42.jpg"
        alt="Brandon Meyer"     
-       offline
+       online
       />
 
       <Contact
@@ -25,7 +26,7 @@ function App() {
        alt="Isabella Thomas"      
        online
       />
-
+    
 
 
     </div>
